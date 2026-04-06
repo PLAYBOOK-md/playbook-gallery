@@ -10,14 +10,12 @@ Take a piece of content and adapt it for different audiences with appropriate to
 
 ## STEP 1: Analyze Source
 
-Analyze the following content and identify:
+Analyze the following content and identify the core message, key facts, technical terms, and reader knowledge assumptions.
 
 {{content}}
 
-1. Core message (one sentence)
-2. Key facts and data points
-3. Technical terms that may need translation
-4. Assumptions about reader knowledge
+Respond with a JSON object:
+{"core_message": "one sentence summary", "key_facts": ["fact1", "fact2"], "technical_terms": ["term1", "term2"]}
 
 @output(core_message, extract:"core_message")
 

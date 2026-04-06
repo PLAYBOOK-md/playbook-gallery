@@ -13,6 +13,7 @@ Simple multi-step chains — no branching, no directives beyond the basics.
 | [Content Pipeline](playbooks/linear/content-pipeline.md) | 4 | Research, outline, draft, polish |
 | [Meeting Notes](playbooks/linear/meeting-notes.md) | 3 | Transcribe, summarize, extract action items |
 | [Code Documentation](playbooks/linear/code-documentation.md) | 3 | Analyze, document, generate examples |
+| [Security Review](playbooks/linear/security-review.md) | 3 | `@prompt`-driven security review with library criteria |
 
 ### Branching Workflows
 
