@@ -2,6 +2,8 @@
 
 Generate a polished article from a topic and target audience.
 
+This playbook demonstrates a classic linear pipeline with four sequential steps. It exercises `enum` inputs for audience targeting and shows how variable interpolation with `{{variable}}` threads context through every step without needing explicit `@output` directives -- each step naturally builds on the prior step's output.
+
 ## SYSTEM
 
 You are a professional content writer. Write clearly, cite sources where possible, and adapt tone to the target audience.

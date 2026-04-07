@@ -13,6 +13,7 @@ Simple multi-step chains — no branching, no directives beyond the basics.
 | [Content Pipeline](playbooks/linear/content-pipeline.md) | 4 | Research, outline, draft, polish |
 | [Meeting Notes](playbooks/linear/meeting-notes.md) | 3 | Transcribe, summarize, extract action items |
 | [Code Documentation](playbooks/linear/code-documentation.md) | 3 | Analyze, document, generate examples |
+| [API Schema Generator](playbooks/linear/api-schema.md) | 3 | Generate JSON/GraphQL API schemas (`type: json` artifact, `boolean` input) |
 | [Security Review](playbooks/linear/security-review.md) | 3 | `@prompt`-driven security review with library criteria |
 
 ### Branching Workflows
@@ -41,6 +42,14 @@ Playbooks that invoke external tools via `@tool` directives.
 | Playbook | Steps | Description |
 |----------|-------|-------------|
 | [Data Analysis](playbooks/tool-integration/data-analysis.md) | 3 | Fetch data, analyze, report |
+
+### Prompt Reference
+
+Playbooks that use `@prompt` to load reusable prompts from an external library.
+
+| Playbook | Steps | Description |
+|----------|-------|-------------|
+| [Brand Voice Rewriter](playbooks/prompt-reference/brand-voice.md) | 3 | Load brand guidelines via `@prompt(library:id)`, then rewrite content to match |
 
 ## Contributing
 

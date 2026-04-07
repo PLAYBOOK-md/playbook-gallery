@@ -2,6 +2,8 @@
 
 Classify an incoming issue and route it to the appropriate workflow.
 
+This playbook demonstrates AI-driven branching where the branch condition is determined at runtime. Step 1 uses `@output(issue_type, extract:"classification")` to extract a structured field from the AI's JSON response, and Step 2 branches on that extracted value. This pattern -- classify then route -- is fundamental for triage and dispatch workflows.
+
 ## INPUTS
 
 - `issue` (text): Issue description from the reporter

@@ -2,6 +2,8 @@
 
 Evaluate a technology choice with structured analysis, human review checkpoints, and a final recommendation.
 
+This playbook demonstrates multiple spec features working together: `@elicit` for human-in-the-loop checkpoints (both `confirm` and `select` types), `@output` with `extract` for structured data capture, and conditional branching based on the `depth` input. Steps 3 and 4 pause execution to collect human input, making this a good example of workflows that blend AI analysis with human judgment.
+
 ## SYSTEM
 
 You are a senior technical architect. Provide evidence-based evaluations. Consider trade-offs, ecosystem maturity, and long-term maintenance costs.

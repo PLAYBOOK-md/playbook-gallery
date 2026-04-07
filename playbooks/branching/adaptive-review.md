@@ -2,6 +2,8 @@
 
 Code review that adapts its focus based on the selected mode.
 
+This playbook demonstrates input-driven branching with `@output` capture in each branch. The `mode` enum input controls which review checklist executes via `if`/`elif`/`else` blocks, and every branch captures its findings with `@output(findings)` so that Step 2 can reference them uniformly regardless of which path was taken.
+
 ## INPUTS
 
 - `code` (text): Code to review
