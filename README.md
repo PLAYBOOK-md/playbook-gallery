@@ -51,6 +51,18 @@ Playbooks that use `@prompt` to load reusable prompts from an external library.
 |----------|-------|-------------|
 | [Brand Voice Rewriter](playbooks/prompt-reference/brand-voice.md) | 3 | Load brand guidelines via `@prompt(library:id)`, then rewrite content to match |
 
+### Non-Technical
+
+Playbooks for product managers, marketers, creators, and small business owners — no dev jargon required.
+
+| Playbook | Steps | Description |
+|----------|-------|-------------|
+| [Client Onboarding](playbooks/non-technical/client-onboarding.md) | 4 | Welcome email, follow-up sequence, and check-in template |
+| [Social Media Campaign](playbooks/non-technical/social-media-campaign.md) | 4 | Audience research, content calendar, post drafts, engagement templates |
+| [Meeting Prep](playbooks/non-technical/meeting-prep.md) | 4 | Context analysis, timed agenda, talking points, follow-up email |
+| [Product Launch Checklist](playbooks/non-technical/product-launch-checklist.md) | 4 | Positioning, budget-adapted checklist, launch day timeline, measurement plan |
+| [Blog to Newsletter](playbooks/non-technical/blog-to-newsletter.md) | 4 | Extract key points, adapt format, subject lines, call-to-action (`boolean` input) |
+
 ## Contributing
 
 We welcome community-contributed playbooks. To submit:
