@@ -1,4 +1,7 @@
-# Playbook Gallery
+# PLAYBOOK.md Gallery
+
+[![License: CC BY 4.0](https://img.shields.io/badge/License-CC_BY_4.0-lightgrey.svg)](https://creativecommons.org/licenses/by/4.0/)
+[![GitHub stars](https://img.shields.io/github/stars/PLAYBOOK-MD/playbook-gallery)](https://github.com/PLAYBOOK-MD/playbook-gallery/stargazers)
 
 A curated collection of [PLAYBOOK.md](https://github.com/PLAYBOOK-MD/playbook-spec) playbooks demonstrating real-world AI workflow patterns.
 
