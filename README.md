@@ -7,6 +7,14 @@ A curated collection of [PLAYBOOK.md](https://github.com/PLAYBOOK-MD/playbook-sp
 
 ## Playbooks
 
+### Claude Code Routines
+
+Playbooks designed for autonomous, scheduled or triggered [Claude Code Routines](https://code.claude.com/docs/en/routines). No elicitation or breakpoints; structured inputs with defaults.
+
+| Playbook | Steps | Description |
+|----------|-------|-------------|
+| [Weekly Docs Drift](playbooks/routines/weekly-docs-drift.md) | 4 | Scan merged PRs, flag stale docs, produce prioritized update list |
+
 ### Linear Pipelines
 
 Simple multi-step chains — no branching, no directives beyond the basics.
@@ -65,6 +73,23 @@ Playbooks for product managers, marketers, creators, and small business owners �
 | [Meeting Prep](playbooks/non-technical/meeting-prep.md) | 4 | Context analysis, timed agenda, talking points, follow-up email |
 | [Product Launch Checklist](playbooks/non-technical/product-launch-checklist.md) | 4 | Positioning, budget-adapted checklist, launch day timeline, measurement plan |
 | [Blog to Newsletter](playbooks/non-technical/blog-to-newsletter.md) | 4 | Extract key points, adapt format, subject lines, call-to-action (`boolean` input) |
+
+## Ready for Claude Code Routines
+
+These playbooks run well as [Claude Code Routines](https://code.claude.com/docs/en/routines) — autonomous, scheduled or triggered Claude Code sessions. All avoid `@elicit` (which cannot pause an autonomous run) or can be adapted using the [elicit-defaults convention](https://docs.playbook.style/guides/claude-code-routines/#elicit-in-autonomous-runs).
+
+Full setup guide: [Run Playbooks as Claude Code Routines](https://docs.playbook.style/guides/claude-code-routines/).
+
+| Playbook | Category | Typical trigger |
+|----------|----------|-----------------|
+| [Weekly Docs Drift](playbooks/routines/weekly-docs-drift.md) | Routines | Schedule (weekly) |
+| [Content Pipeline](playbooks/linear/content-pipeline.md) | Linear | Schedule or API |
+| [Issue Triage](playbooks/branching/issue-triage.md) | Branching | GitHub (issues.opened) |
+| [Meeting Notes](playbooks/linear/meeting-notes.md) | Linear | API (post-meeting upload) |
+| [Code Documentation](playbooks/linear/code-documentation.md) | Linear | GitHub (push to main) |
+| [API Schema Generator](playbooks/linear/api-schema.md) | Linear | Schedule |
+| [Adaptive Code Review](playbooks/branching/adaptive-review.md) | Branching | GitHub (pull_request.opened) |
+| [Tone Adapter](playbooks/branching/tone-adapter.md) | Branching | API |
 
 ## Contributing
 
