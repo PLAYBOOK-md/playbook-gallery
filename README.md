@@ -15,6 +15,16 @@ Playbooks designed for autonomous, scheduled or triggered [Claude Code Routines]
 |----------|-------|-------------|
 | [Weekly Docs Drift](playbooks/routines/weekly-docs-drift.md) | 4 | Scan merged PRs, flag stale docs, produce prioritized update list |
 
+### Ready for GitHub Actions
+
+Playbooks that run as-is on [`PLAYBOOK-MD/playbook-native`](https://github.com/PLAYBOOK-MD/playbook-native) (standalone Node runtime for `.playbook.md` files in CI). Any playbook without `@tool(…)`, `@prompt(mcp:…)`, or `@prompt(library:…)` directives is native-compatible; the table below highlights ones that pair naturally with common GitHub Actions triggers.
+
+| Playbook | Trigger shape | Notes |
+|----------|---------------|-------|
+| [Weekly Docs Drift](playbooks/routines/weekly-docs-drift.md) | `schedule` (cron) | Same shape as the routines listing — runs here too |
+| [Content Pipeline](playbooks/linear/content-pipeline.md) | `workflow_dispatch` | Pass `topic`, `audience`, `word_count` as dispatch inputs |
+| [API Schema Generator](playbooks/linear/api-schema.md) | `workflow_dispatch` | Typed inputs + JSON artifact |
+
 ### Linear Pipelines
 
 Simple multi-step chains — no branching, no directives beyond the basics.
